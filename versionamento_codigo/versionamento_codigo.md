@@ -12,7 +12,7 @@
 
 **O que esperamos como resposta:**
 
-> Descreva o que se espera da resposta do candidato. Por exemplo: "Crie um arquivo chamado `questao1.py` com uma função que resolva o problema X".
+> laura alterou essa linha
 
 ---
 
