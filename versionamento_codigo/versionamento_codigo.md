@@ -8,7 +8,7 @@ Assassinado
 ## Atividades
 
 ### Questão Máspoly
-
+### NAO DEIXO
 > Insira aqui o enunciado da primeira questão.
 
 **O que esperamos como resposta:**
