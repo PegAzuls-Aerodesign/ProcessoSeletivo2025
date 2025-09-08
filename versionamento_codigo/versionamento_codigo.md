@@ -7,7 +7,7 @@ Assassinado
 
 ## Atividades
 
-### Questão 1
+### Questão Máspoly
 
 > Insira aqui o enunciado da primeira questão.
 
