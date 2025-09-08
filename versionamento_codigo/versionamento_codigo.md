@@ -26,3 +26,5 @@
 > Descreva o que se espera da resposta do candidato. Por exemplo: "Crie um arquivo chamado `questao2.py` que implemente a lógica Y".
 
 ---
+
+>> Assinado
