@@ -7,8 +7,9 @@ Assassinado
 
 ## Atividades
 
-### Questão 1
-
+### Removendo o  que Maspoly fez
+### Questão Máspoly
+### NAO DEIXO
 > Insira aqui o enunciado da primeira questão.
 
 **O que esperamos como resposta:**
