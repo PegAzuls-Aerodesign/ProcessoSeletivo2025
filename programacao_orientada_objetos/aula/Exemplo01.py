@@ -1,9 +1,11 @@
 class Aerodesign:
-    asa: str = "Monoplano"
-    fuselagem: str = "Caixão"
-    MTOW: float = 9.18
-    equipe: str = "Dragão Branco"
-    voando: bool = False
+
+    def __init__(self, asa: str, fuselagem: str, MTOW: float, equipe: str):
+        self.asa = asa
+        self.fuselagem = fuselagem
+        self.MTOW = MTOW
+        self.equipe = equipe
+        self.voando = False
 
     def decolar(self):
         """
@@ -41,7 +43,7 @@ class Aerodesign:
 
 if __name__ == "__main__":
     # Criando uma instância (objeto) da classe Aerodesign
-    meu_aviao = Aerodesign()
+    meu_aviao = Aerodesign("Asa Alta", "Fuselagem de Fibra de Carbono", 25.0, "Equipe Alpha")
     
     # Exibindo a ficha técnica do avião
     meu_aviao.ficha_tecnica()
