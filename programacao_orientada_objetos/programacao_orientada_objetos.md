@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-> Ao fim dessa etapa, é esperado do cadidato ter noções básicas de programação orientada a objetos, suas principais características e boas práticas relacionadas, bem como modelar problemas da vida real no âmbito computacional
+> Ao fim dessa etapa, é esperado do candidato ter noções básicas de programação orientada a objetos, suas principais características e boas práticas relacionadas, bem como modelar problemas da vida real no âmbito computacional
 
 ## Questões conceituais
 
