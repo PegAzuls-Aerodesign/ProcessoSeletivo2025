@@ -12,7 +12,7 @@
 
 **O que esperamos como resposta:**
 
-> Pode responder aqui em baixo
+>  É um paradigma da programação, que se organiza em torno de objetos, entidades que combinam atributos e métodos, assim, representando conceitos do mundo real, surgiu para lidar com a complexidade que o desenvolvimento de software estava tomando, busca maior modularidade, reutilização de códigos e facilidade de manutenção, as principais diferenças entre Programação Orientada a Objetos (POO) e Programação Estruturada (PE), enquanto POO organiza o código em torno de objetos que possuem atributos e métodos, a PE foca em executar em sequências de tarefas, usando estruturas de controle, como sequência, seleção e iteração.
 
 ---
 
@@ -22,7 +22,18 @@
 
 **O que esperamos como resposta:**
 
-> Pode responder aqui em baixo
+> Um objeto é um módulo concreto de um "Conceito do mundo real", possuí atributos e métodos, é uma instância da classe, essa sendo o molde que define as características e comportamentos comuns a um tipo de objeto. Um exemplo de Classe: 
+
+--> Classe 
+class Aeronave:
+    def __init__(self, nome, tipo, capacidade_passageiros):
+        self.nome = nome
+        self.tipo = tipo
+        self.capacidade_passageiros = capacidade_passageiros
+        self.voando = False
+
+--> Objeto
+boeing = Aeronave("Boeing 747", "Jato Comercial", 416)
 
 ---
 
@@ -36,28 +47,26 @@
 
 > Para modelar os diferentes cargos em uma empresa, foi criada uma classe base `Funcionario` que contém atributos e métodos comuns a todos, como `nome`, `matricula` e o método `calcular_salario()`. Em seguida, foram criadas as classes `Gerente` e `Desenvolvedor`, que são baseadas na classe `Funcionario`, **reaproveitando todo o seu código** e apenas adicionando funcionalidades específicas, como o método `aprovar_ferias()` para o Gerente e `codificar()` para o Desenvolvedor. A relação aqui é que todo `Gerente` **É UM** `Funcionario`.
 >
-> **Pilar associado:** _________________________
-
+> **Pilar associado:** Herança
 
 **2. Módulo de Pagamentos**
 
 > Em um sistema de e-commerce, foi criada uma única função chamada `processar_pagamento`. Essa função é capaz de receber uma lista de objetos de **tipos diferentes**, como `PagamentoBoleto`, `PagamentoCartao` e `PagamentoPix`. A função simplesmente itera sobre a lista e chama o **mesmo método** `.confirmar_pagamento()` em cada objeto. Cada tipo de pagamento executa a confirmação de sua **própria maneira específica**: o boleto verifica a compensação, o cartão contata a operadora e o Pix checa o banco central.
 >
-> **Pilar associado:** _________________________
-
+> **Pilar associado:** polimorfismo
 
 **3. Controle de uma Smart TV**
 
 > Ao modelar a classe `SmartTV` para um aplicativo de controle remoto, os desenvolvedores decidiram expor apenas os métodos essenciais que um usuário precisa, como `ligar()`, `mudar_canal()` e `aumentar_volume()`. Toda a **complexidade interna** do sistema operacional da TV, o processamento de sinal digital, os circuitos eletrônicos e a comunicação com a internet foi **completamente omitida** da interface da classe. O objetivo era fornecer um modelo simplificado, mostrando apenas o necessário para o **contexto do controle pelo usuário**.
 >
-> **Pilar associado:** _________________________
+> **Pilar associado:** Abstração
 
 
 **4. Classe de Conta Bancária**
 
 > Para garantir a integridade dos dados, a classe `ContaBancaria` foi projetada de forma que o atributo `_saldo` seja **protegido de acesso direto**. Qualquer tentativa de modificação no saldo de uma conta deve ser feita **exclusivamente através dos métodos públicos** `depositar(valor)` e `sacar(valor)`. Esses métodos contêm regras de negócio importantes, como não permitir depósitos de valores negativos ou saques maiores que o saldo disponível, garantindo que o objeto nunca entre em um estado inválido.
 >
-> **Pilar associado:** _________________________
+> **Pilar associado:** Encapsulamento
 
 **O que esperamos como resposta:**
 
@@ -75,19 +84,18 @@
 
 > Em um sistema acadêmico, uma `Turma` é formada por um conjunto de `Alunos`. Os objetos do tipo `Aluno` são criados de forma independente e podem existir no sistema mesmo sem estarem associados a uma turma. Ao criar uma `Turma`, o sistema **recebe uma lista de objetos `Aluno` já existentes** e os armazena. Se a `Turma` for cancelada e o objeto correspondente destruído, os objetos `Aluno` continuarão existindo no sistema.
 >
-> **Relacionamento associado:** _________________________
+> **Relacionamento associado:** Agregação
 
 **2. Sistema de uma Editora de Livros**
 
 > Ao modelar um `Livro`, foi definido que todo livro **É UM** `Produto` vendável. A classe `Livro` foi criada com base na classe `Produto`, **reaproveitando automaticamente** atributos como `codigo_de_barras` e `preco`, além de métodos como `calcular_imposto()`. A classe `Livro` então adicionou atributos próprios, como `autor` e `numero_paginas`.
 >
-> **Relacionamento associado:** _________________________
-
+> **Relacionamento associado:** Herança
 **3. Representação de um Computador**
 
 > No sistema de uma loja de eletrônicos, a classe `Computador` é modelada. Ficou definido que um `Computador` é composto por partes essenciais, como uma `PlacaMae`. O objeto `PlacaMae` é uma **parte intrínseca e exclusiva** do `Computador`. Ele é **criado no exato momento em que o `Computador` é instanciado** e não faz sentido existir no sistema de forma independente. Se o objeto `Computador` for removido do inventário (destruído), o objeto `PlacaMae` associado a ele também deixa de existir.
 >
-> **Relacionamento associado:** _________________________
+> **Relacionamento associado:** Composição
 
 **O que esperamos como resposta:**
 
