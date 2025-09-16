@@ -14,7 +14,7 @@ class Veiculo:
         self.disponivel = True  # Um carro novo no sistema sempre está disponível
 
     # --- Métodos Essenciais para a Locação ---
-    def reservar(self, cliente):
+    def reservar(self, cliente): 
         """Altera o estado do veículo para 'não disponível'."""
         if self.disponivel:
             self.disponivel = False
