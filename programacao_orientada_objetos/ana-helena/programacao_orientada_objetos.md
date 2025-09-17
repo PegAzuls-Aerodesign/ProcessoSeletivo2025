@@ -158,7 +158,8 @@ acrescentada ao preço final do produto.
 
 ### Questão 7 (SOLID)
 
-> Nossa equipe de aerodesign, precisa de um sistema flexível para calcular a pontuação final de nossas aeronaves nos relatórios de desempenho. A pontuação é baseada em um conjunto de critérios que podem mudar ou ser expandidos a cada nova competição.
+> 
+Nossa equipe de aerodesign, precisa de um sistema flexível para calcular a pontuação final de nossas aeronaves nos relatórios de desempenho. A pontuação é baseada em um conjunto de critérios que podem mudar ou ser expandidos a cada nova competição.
 
 > Seu desafio é criar a primeira versão desta calculadora e, em seguida, provar que seu design é robusto o suficiente para acomodar novas regras sem quebrar o que já existe.
 
@@ -187,7 +188,6 @@ acrescentada ao preço final do produto.
 > Todo código pode estar implementado em uma arquivo questao7.py
 
 > Tal problema é semelhante ao apresentado em `aula/solid/ocp/Exemplo2.py`e pode servir de inspiração.
-
 ### Questão 8 (Ponte)
 
 Para representar a geometria de uma ponte treliçada, podemos criar estruturas geométricas básicas a partir de classes.
