@@ -176,9 +176,30 @@ acrescentada ao preço final do produto.
 
 > Aplicação do Open/closed principle em um problema do escopo do projeto.
 
-> Todo código pode estar implementado em uma arquivo questao7.py
+> Todo código pode estar implementado em um arquivo questao7.py
 
 > Tal problema é semelhante ao apresentado em `aula/solid/ocp/Exemplo2.py`e pode servir de inspiração.
+
+---
+
+### Questão 7 (Parte 2)
+
+**Surgiu uma nova Demanda:**
+
+> A comissão organizadora da competição SAE Brasil Aerodesign informou que, para este ano de 2025, foi adicionada uma **nova regra de bônus** para incentivar projetos mais eficientes.
+
+**Novo Critério de Pontuação:**
+> * **Bônus de Eficiência Estrutural:** A pontuação deste bônus é a razão entre a carga paga e o peso vazio, multiplicada por 20. Fórmula: `(carga_paga_kg / peso_vazio_kg) * 20`.
+
+**Sua Tarefa:**
+
+> Adapte seu programa para incluir esta nova regra. O objetivo é fazer a **menor modificação possível** no código que você já escreveu na Parte 1. O ideal é não modificar nenhuma classe ou função existente que já estava funcionando, apenas **adicionar código novo**.
+
+**O que esperamos como resposta:**
+
+> Continuação do código no mesmo arquivo questao7.py da primeira parte 
+
+---
 
 ### Questão 8 (Ponte)
 
