@@ -15,6 +15,11 @@ class CriterioLeveza(Aeronave):
     def rate(self):
         return max(0, 100 - self.carga_vazia * 5)
 
+# Nova classe adicionada (Critério de eficiência estrutural)
+class CriterioEficienciaEStrutural(Aeronave):
+    def rate(self):
+        return (self.carga_paga/self.carga_vazia) *  20
+
 # Classe responsável por calcular o valor total
 class Calculadora:
     # Função que recebe os valores das variáveis da lista
@@ -36,7 +41,8 @@ def Iniciar():
 
     aeronaves = [
         CriterioCargaPaga(nome, carga_vazia, carga_paga),
-        CriterioLeveza(nome, carga_vazia, carga_paga)
+        CriterioLeveza(nome, carga_vazia, carga_paga),
+        CriterioEficienciaEStrutural(nome, carga_vazia, carga_paga)     # Critério adcionado
     ]
 
     calc = Calculadora(aeronaves)
