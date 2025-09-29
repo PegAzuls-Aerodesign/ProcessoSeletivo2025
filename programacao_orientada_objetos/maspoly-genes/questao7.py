@@ -15,6 +15,11 @@ class Levesa(Aeronave):
     def rate(self):
         return max(0, 100 - (self.carga_vazia * 5))
     
+# Nova parte que deveríamos adcionar    
+class EficienciaEstrutural(Aeronave):
+    def rate(self):
+        return (self.carga_paga/self.carga_vazia) * 20
+    
 class Calculadora: # Calcula a eficiência com base nas outras pontuações, de modo modular
     def __init__(self, aeronaves: list[Aeronave]):
         self.aeronaves = aeronaves
@@ -31,7 +36,8 @@ dadosDic = {
     "carga_paga": 8
 }
 
-dadosAeronave = [CargaPaga(*dadosDic.values()), Levesa(*dadosDic.values())] # Cria a lista com as classes que serão usadas
+dadosAeronave = [CargaPaga(*dadosDic.values()), Levesa(*dadosDic.values()), 
+                 EficienciaEstrutural(*dadosDic.values())] # Cria a lista com as classes que serão usadas
 calcular = Calculadora(dadosAeronave) # Cria um objeto da lista
 print(f"A eficiencia do avião {dadosDic['nome']} é", calcular.calcular_total())
 
